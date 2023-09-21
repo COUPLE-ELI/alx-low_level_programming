@@ -17,11 +17,11 @@ int print_sign(int n)
 	}
 
 	else if (n < 0)
+
 	{
 	printf("-\n");
 	return (-1);
 	}
-
 	else
 	{
 	printf("0\n");
