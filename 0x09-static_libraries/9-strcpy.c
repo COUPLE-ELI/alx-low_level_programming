@@ -1,45 +1,27 @@
-
 #include "main.h"
 
 /**
- * puts2 - function should print only one character out of two
- * starting with the first one
- * @str: input
- * Return: print
+ * char *_strcpy - a function that copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
  */
-
-void puts2(char *str)
-
+char *_strcpy(char *dest, char *src)
 {
+	int l = 0;
+	int x = 0;
 
-	int longi = 0;
-	int t = 0;
-	char *y = str;
-	int o;
-
-
-	while (*y != '\0')
-
+	while (*(src + l) != '\0')
 	{
-
-	y++;
-
-	longi++;
-
+	l++;
 	}
 
-	t = longi - 1;
-
-	for (o = 0 ; o <= t ; o++)
-
-	if (o % 2 == 0)
-
+	for (; x < l; x++)
 	{
-
-	_putchar(str[o]);
-
+	dest[x] = src[x];
 	}
 
-	_putchar('\n');
-
+	dest[l] = '\0';
+	return (dest);
 }
+
